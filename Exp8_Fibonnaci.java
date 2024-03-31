@@ -13,10 +13,7 @@ public class Exp8_Fibonnaci {
             System.out.println("Please enter a postive integer.");
             
         }
-        else if (a == 1) {
-            System.out.println("Fibonacci sequence upto"+a+"is: ");
-            System.out.println(n1);    
-        }
+            
         else{
             System.out.println("Fibonacci Sequence: ");
             while (a > count) {
