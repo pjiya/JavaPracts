@@ -12,14 +12,14 @@ public class Exp6_KmToMiles {
             System.out.println("Enter distance in Km: ");
             double km = sc.nextDouble();
             double miles = km*0.621371;
-            System.out.println(String.format("Distance in Miles: %.2f",miles));
+            System.out.println("Distance in Miles:" + miles);
             
         }
         else{
             System.out.println("Enter distance in Miles: ");
             double miles = sc.nextDouble();
             double km = miles/0.621371;
-            System.out.println(String.format("Distance in Km: %.2f",km));
+            System.out.println("Distance in Km:" + km);
         }
     }
 }
