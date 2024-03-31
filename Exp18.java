@@ -1,58 +1,31 @@
-package practicals;
+class Person {
+    String name;
+    int age;
+}
 
-		
-		class person{
+class Employee extends Person {
+    int employeeId;
+    int salary;
+}
 
-			String name;
-
-			int age;
-
-			public person(String name,int age) {
-
-				this.name = name;
-
-				this.age = age;
-
-			}
-
-		}
-
-
-		class employee extends person{
-
-			int employeeId;
-
-			double salary;
-
-			public employee(String name, int age,int empid,double salary) {
-
-				super(name, age);
-
-				this.employeeId = empid;
-
-				this.salary = salary;
-
-			}
-
-
-		}
-
-		public class Exp18 {
-
-
-			public static void main(String[] args) {
-
-				person p1 = new person("Jiyaaa",28);
-
-				employee e1 = new employee("hiii",26,321,133245);
-
-				
-
-				System.out.print(p1.name+"  "+p1.age);
-
-			}
-
-
-		
-
-	}
+public class Exp18_Person {
+    public static void main(String[] args) {
+        Person p = new Person();
+        p.name = "Abc";
+        p.age = 25;
+        
+        Employee e = new Employee();
+        e.name = "Xyz";
+        e.age = 23;
+        e.employeeId = 123;
+        e.salary = 50000;
+        
+        System.out.println("Name in person : " + p.name);
+        System.out.println("Age in person : " + p.age);
+        
+        System.out.println("Name in employee : " + e.name);
+        System.out.println("Age in employee : " + e.age);
+        System.out.println("Employee ID in employee : " + e.employeeId);
+        System.out.println("Salary in employee : " + e.salary);
+    }
+}
