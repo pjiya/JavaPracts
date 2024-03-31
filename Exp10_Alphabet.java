@@ -3,7 +3,7 @@ Print Vowel or Consonant, depending on user input. If the user input is not a le
 (between a and z or A and Z), or is a string of length > 1, print an error message.
 */
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Exp10_Alphabet {
     public static void main(String[] args) {
